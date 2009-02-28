@@ -1,0 +1,42 @@
+Timer
+=====
+
+http://github.com/dmajda/timer
+
+Timer is a simple time-tracking application written in HTML and JavaScript that
+uses HTML5 DOM Storage to store all data completely on the client-side. It
+allows you to track time spent working on multiple projects.
+
+Timer is quite simplistic and it does not offer anything new or unique--it was
+written mainly as an exercise to explore the state of the DOM Storage technology
+in various browsers and MVC architecture in a pure JavaScript application.
+
+Installation and Usage
+----------------------
+1. Download the ZIP or .tar.gz file of the Timer application from GitHub and
+   extract it somewhere.
+2. Open the timer.html file in your browser.
+3. Happily use the application.
+
+Note: In Firefox, the timer.html file cannot be accessed through a file: URL,
+because the DOM Storage wouldn't work correctly then. The workaround is to move
+the application into a directory served by a web server (either local or remote)
+and access the timer.html file via http: URL. If someone knows how to make the
+DOM Storage work with file: URLs in Firefox, please let me know.
+
+Tip: For the best experience, save the timer.html URL into the bookmarks and
+configure it to open in the browser sidebar.
+
+Browser support
+---------------
+* Firefox 3+ (2.x versions should theoretically work too)
+* Safari 4+ (tested with public beta)
+
+Other browsers are not supported because they do not support DOM Storage.
+
+Author
+------
+Timer was brought to you by David Majda (david@majda.cz, www.majda.cz).
+
+Timer uses icons from the Silk icon set, available from
+http://www.famfamfam.com/lab/icons/silk/.

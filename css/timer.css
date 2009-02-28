@@ -1,0 +1,21 @@
+body {
+  margin: .5em; padding: 0;
+  font-family: Verdana, lucida, sans-serif; font-size: 10pt;
+  color: black; background-color: white;
+}
+a img { border: none; }
+
+#project-table { width: 100%; max-width: 32em; margin-bottom: .5em; border-collapse: collapse; }
+#project-table th, #project-table td { border-bottom: 2px solid white; padding: .2em 1em; }
+#project-table th { color: white; background-color: #808080; }
+#project-table td.project-name { font-weight: bold; }
+#project-table td.project-time { text-align: center; }
+#project-table td.project-actions { text-align: center; }
+#project-table tr.state-stopped td { background-color: #f0f0f0; }
+#project-table tr.state-running td { background-color: #ffff80; }
+#project-table a:focus { outline: none; }
+
+#add-project-button {
+  min-height: 24px; padding-left: 24px;
+  background: ButtonFace url("../img/add.png") 4px center no-repeat;
+}
