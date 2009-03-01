@@ -514,7 +514,7 @@ function initializeProjectsEventHandlers() {
 function initializeGuiEventHandlers() {
   $("#add-project-button").removeAttr("disabled");
   $("#add-project-button").click(function() {
-    var projectName = prompt("Enter project name:");
+    var projectName = prompt("Enter project name:", "");
     if (projectName === null) { return; }
 
     var project = new Project(projectName);
