@@ -29,6 +29,7 @@ configure it to open in the browser sidebar.
 
 Browser support
 ---------------
+* IE 8+ (tested with RC1)
 * Firefox 3+ (2.x versions should theoretically work too)
 * Safari 4+ (tested with public beta)
 
