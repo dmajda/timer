@@ -27,7 +27,7 @@ DOM Storage work with file: URLs in Firefox, please let me know.
 Tip: For the best experience, save the timer.html URL into the bookmarks and
 configure it to open in the browser sidebar.
 
-Browser support
+Browser Support
 ---------------
 * IE 8+ (tested with RC1)
 * Firefox 3+ (2.x versions should theoretically work too)
