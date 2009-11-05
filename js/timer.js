@@ -341,12 +341,17 @@ function saveProjects() {
  */
 function loadSerializedProjectsString() {
   var storedValue = getStorage()[PROJECTS_DOM_STORAGE_KEY];
-  if (storedValue !== undefined) {
+  /*
+   * The spec says "null" should be returned when the key is not found, but some
+   * browsers return "undefined" instead. Maybe it was in some earlier version
+   * of the spec (I didn't bother to check).
+   */
+  if (storedValue !== null && storedValue !== undefined) {
     /*
      * The values retrieved from "globalStorage" use one more level of
      * indirection.
      */
-    return (window.globalStorage !== undefined) ? storedValue.value : storedValue;
+    return (window.localStorage === undefined) ? storedValue.value : storedValue;
   } else {
     return undefined;
   }
